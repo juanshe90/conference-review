@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  api_session:
+    build: .
+    restart: always
+    hostname: spring
+    ports:
+      - 8081:8080
+    container_name: review-service
+    depends_on:
+      - postgres
+
+  postgres:
+    image: "postgres:latest"
+    environment:
+      - POSTGRES_DB=review_database
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Welcome
+    hostname: postgres
+    container_name: review-postgres
+    ports:
+      - 5431:5432
+
+networks:
+  default:
+    external: true
+    name: my-conference-network

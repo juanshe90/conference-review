@@ -1,0 +1,3 @@
+INSERT INTO Reviews ( review_type, review_reference,  review_grade, review_title, review_description, review_username) VALUES(  'SESSIONS', 1,  5, 'Fantastic speaker', 'He explains everything very clear', 'Juan Stelling');
+INSERT INTO Reviews (  review_type, review_reference, review_grade, review_title, review_description, review_username) VALUES(  'SPEAKERS', 1, 4, 'Good session', 'It was creative and inspirational', 'Kees Joe');
+INSERT  INTO Reviews ( review_type, review_reference, review_grade, review_title, review_description, review_username) VALUES(  'SESSIONS', 1, 3, 'Great experience', 'it was good. ', 'John Doe');
